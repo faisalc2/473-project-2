@@ -8,7 +8,11 @@
 double A[N][N];
 double C[N][N];
 
-double kernel[][]; //to be defined properly with matrix generation
+double kernel[3][3] = {
+  {0, -1, 0},
+  {-1, 5, -1},
+  {0, -1, 0}
+};
 
 pthread_barrier_t barrier;
 
